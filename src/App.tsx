@@ -27,7 +27,9 @@ const getWeather = (e:any) => {
       })
       console.log(data)
     })
-    
+    .catch(err => alert("エラーが発生しました。ページをリロードして、もう一度トライしてください。"))
+
+
 };
 const [results, setResults] = useState<ResultsStateType>({
   country:"",
