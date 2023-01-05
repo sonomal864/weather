@@ -15,7 +15,7 @@ function App(){
 const [city, setCity] = useState<string>("");
 const getWeather = (e:any) => {
     e.preventDefault()
-    fetch(`http://api.weatherapi.com/v1/current.json?key=585ba6a19e9a454e85342109222212&q=${city}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=585ba6a19e9a454e85342109222212&q=${city}&aqi=no`)
     .then(res => res.json())
     .then(data => {
       setResults({
